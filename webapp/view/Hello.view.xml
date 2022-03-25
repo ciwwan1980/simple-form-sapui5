@@ -1,0 +1,15 @@
+<core:View
+xmlns:core="sap.ui.core"
+xmlns="sap.m"
+controllerName="tom.controller.Login">
+  
+    <Label text="User Name"/>
+  <Input id="idUser"/>
+  <Label text="Password"/>
+  <Input id="idPassword"/>
+  <Label text="Password"/>
+  <Input id="idPassword1"/>
+  <Button  text="Login" press="onLogin"/>
+  
+ 
+</core:View>

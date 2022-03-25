@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script
+    id="sap-ui-bootstrap"
+    src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+    data-sap-ui-theme="sap_bluecrystal"
+    data-sap-ui-libs="sap.m"
+    data-sap-ui-resourceroots='{
+        "tom": "./"
+    }'>
+    </script>
+    <script>
+    var oView= new sap.ui.view({
+        viewName:"tom.view.Login",
+        type:"XML"
+    });
+    oView.placeAt("spidy")
+    var oView= new sap.ui.view({
+        viewName:"tom.view.Hello",
+        type:"XML"
+    });
+    oView.placeAt("ironman")
+    </script>
+</head>
+
+<body class="sapUiBody">
+    <div id="spidy"></div>
+    <div id="ironman"></div>
+</body>
+
+</html>
