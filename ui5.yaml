@@ -1,4 +1,4 @@
-specVersion: '2.2'
+specVersion: '2.6'
 metadata:
-  name: ui5
+  name: my-app
 type: application

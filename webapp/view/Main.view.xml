@@ -1,0 +1,19 @@
+
+<View xmlns:core="sap.ui.core.mvc" 
+xmlns="sap.m" 
+xmlns:f="sap.ui.layout.form" 
+controllerName="ibm.fin.ar.controller.Main">
+	<f:SimpleForm editable="true">
+		<Label text="Emp ID" />
+		<Input value="{/empStr/empId}"/>
+        <Label text="Emp Name" />	
+		<Input value="{/empStr/empName}"/>
+        <Label text="Salary" />
+		<Input id="idSalary"/>
+        <Label text="Currency" />
+		<Input id="idCurr"/>
+	<Button text="Click Me"/>
+	</f:SimpleForm>
+</View>
+						
+	

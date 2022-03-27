@@ -6,27 +6,24 @@
     id="sap-ui-bootstrap"
     src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
     data-sap-ui-theme="sap_bluecrystal"
+    data-sap-ui-xx-bindingSyntax="complex"
     data-sap-ui-libs="sap.m"
     data-sap-ui-resourceroots='{
-        "tom": "./"
+        "ibm.fin.ar": "./"
     }'>
     </script>
     <script>
     var oView= new sap.ui.view({
-        viewName:"tom.view.Login",
+        viewName:"ibm.fin.ar.view.Main",
         type:"XML"
     });
-    oView.placeAt("spidy")
-    // var oView= new sap.ui.view({
-    //     viewName:"tom.view.Hello",
-    //     type:"XML"
-    // });
-    // oView.placeAt("ironman")
+    oView.placeAt("content")
+   
     </script>
 </head>
 
 <body class="sapUiBody">
-    <div id="spidy"></div>
+    <div id="content"></div>
     
 </body>
 
