@@ -16,7 +16,8 @@ sap.ui.define([
                         "empId":100,
                         "empName":"ajil",
                         "salary":9500,
-                        "currency":"euro"
+                        "currency":"euro",
+                        "sherlok": false
                     }
                 
                 })
@@ -28,6 +29,7 @@ sap.ui.define([
                 oSalary.bindValue("/empStr/salary");
                 var oCurr=this.getView().byId("idCurr");
                 oCurr.bindProperty("value", "/empStr/currency")
+                oCurr.bindProperty("enabled", "/empStr/sherlok")
             }
        });
  })
