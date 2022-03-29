@@ -5,13 +5,13 @@ xmlns:f="sap.ui.layout.form"
 controllerName="ibm.fin.ar.controller.Main">
 	<f:SimpleForm editable="true" id="simpleForm" >
 		<Label text="Emp ID" />
-		<Input  id="idEmpID" value="{/empStr/empId}" enabled="false"/>
+		<Input  id="idEmpID" value="{/empStr/empId}" enabled="{/empStr/sherlok}"/>
         <Label text="Emp Name" />	
-		<Input  id="idEmpName" value="{/empStr/empName}" enabled="false"/>
+		<Input  id="idEmpName" value="{/empStr/empName}" enabled="{/empStr/sherlok}"/>
         <Label text="Salary" />
-		<Input id="idSalary" enabled="false"/>
+		<Input id="idSalary"  enabled="{/empStr/sherlok}"/>
         <Label text="Currency" />
-		<Input id="idCurr" enabled="false"/>
+		<Input id="idCurr"  enabled="{/empStr/sherlok}"/>
 	<Button text="Click Me" press="onMagic"/>
 	</f:SimpleForm>
 </View>
