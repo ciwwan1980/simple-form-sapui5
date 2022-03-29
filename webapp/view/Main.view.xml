@@ -1,9 +1,15 @@
 
-<View xmlns:core="sap.ui.core.mvc" 
+<mvc:View 
+xmlns:mvc="sap.ui.core.mvc" 
 xmlns="sap.m" 
+xmlns:core="sap.ui.core" 
 xmlns:f="sap.ui.layout.form" 
 controllerName="ibm.fin.ar.controller.Main">
 	<f:SimpleForm editable="true" id="simpleForm" >
+
+	<f:title>
+		<core:Title text="employess details"/>
+	</f:title>
 		<Label text="Emp ID" />
 		<Input  id="idEmpID" value="{/empStr/empId}" enabled="{/empStr/sherlok}"/>
         <Label text="Emp Name" />	
@@ -14,6 +20,6 @@ controllerName="ibm.fin.ar.controller.Main">
 		<Input id="idCurr"  enabled="{/empStr/sherlok}"/>
 	<Button text="Click Me" press="onMagic"/>
 	</f:SimpleForm>
-</View>
+</mvc:View>
 						
 	

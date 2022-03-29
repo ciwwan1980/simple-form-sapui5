@@ -4,9 +4,7 @@ sap.ui.define([
 
     return Controller.extend("ibm.fin.ar.controller.Main", {
 
-
         onInit: function () {
-
 
             ///steps 1: create a brand new model object 
             var oSpiderman = new sap.ui.model.json.JSONModel();
@@ -33,6 +31,8 @@ sap.ui.define([
 
         },
         // complex-depening on ID in View
+
+        mario: false, 
         onMagic: function () {
             
         //technique number 2- 
@@ -46,13 +46,20 @@ sap.ui.define([
 
             // }
 
+            if(this.mario===true){
+                this.mario=false;
+            }else{
+                this.mario=true;
+            }
+
         //technique number 3- 
             
             //1- get the model of the object again, after we set the model in onint 
             // sap.ui.getCore().setModel(oSpiderman), we get it again below
             var oModel= sap.ui.getCore().getModel();
             //2-change the value in the model for scherlock 
-            oModel.setProperty("/empStr/sherlok", true)
+            console.log(oModel, "oModel")
+            oModel.setProperty("/empStr/sherlok", this.mario)
         }
 
     });
