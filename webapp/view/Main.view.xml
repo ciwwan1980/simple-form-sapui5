@@ -3,16 +3,16 @@
 xmlns="sap.m" 
 xmlns:f="sap.ui.layout.form" 
 controllerName="ibm.fin.ar.controller.Main">
-	<f:SimpleForm editable="true">
+	<f:SimpleForm editable="true" id="simpleForm" >
 		<Label text="Emp ID" />
-		<Input value="{/empStr/empId}"/>
+		<Input  id="idEmpID" value="{/empStr/empId}" enabled="false"/>
         <Label text="Emp Name" />	
-		<Input value="{/empStr/empName}"/>
+		<Input  id="idEmpName" value="{/empStr/empName}" enabled="false"/>
         <Label text="Salary" />
-		<Input id="idSalary"/>
+		<Input id="idSalary" enabled="false"/>
         <Label text="Currency" />
-		<Input id="idCurr"/>
-	<Button text="Click Me"/>
+		<Input id="idCurr" enabled="false"/>
+	<Button text="Click Me" press="onMagic"/>
 	</f:SimpleForm>
 </View>
 						
