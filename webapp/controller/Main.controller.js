@@ -1,11 +1,13 @@
 sap.ui.define([
     "ibm/fin/ar/controller/BaseController",
-], function (Controller) {
+    "ibm/fin/ar/models/model"
+], function (Controller,model) {
 
     return Controller.extend("ibm.fin.ar.controller.Main", {
 
         onInit: function () {
 
+          var oSpiderman= model.createMyJSONModel()
             ///steps 1: create a brand new model object 
          
             // steps 2- set or load date in the model
@@ -13,16 +15,20 @@ sap.ui.define([
             //steps 3- make a model awar to the application
             sap.ui.getCore().setModel(oSpiderman)
 
-            //steps4: binding - 4 ways we can do binding-syntac
+            
+
+        },
+        // complex-depening on ID in View
+
+            _bindValue: function(){
+                //steps4: binding - 4 ways we can do binding-syntac
             var oSalary = this.getView().byId("idSalary");
             oSalary.bindValue("/empStr/salary");
             var oCurr = this.getView().byId("idCurr");
             oCurr.bindProperty("value", "/empStr/currency")
             // oCurr.bindProperty("enabled", "/empStr/sherlok")
-
-        },
-        // complex-depening on ID in View
-
+            this._bindValue()
+            },
         mario: false, 
         onMagic: function () {
             
