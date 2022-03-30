@@ -1,10 +1,12 @@
 sap.ui.define([
-    "sap/ui/core/json/JSONModel"
+    "sap/ui/model/json/JSONModel"
 ], function(JSONModel) {
     'use strict';
-      createMyJSONModel: function (param){
+   
+    return {
+    createMyJSONModel: function (){
         // step1 create a brand mew model 
-        var oSpiderman = new sap.ui.model.json.JSONModel();
+        var oSpiderman = new JSONModel();
         //set up or load the data
         oModel.setData({
             "empStr": {
@@ -15,7 +17,9 @@ sap.ui.define([
                 "sherlok": false
             }
 
-        })
+        });
+        return oModel
 
     }
+   }
 });
