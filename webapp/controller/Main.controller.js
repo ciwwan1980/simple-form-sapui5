@@ -9,12 +9,16 @@ sap.ui.define([
 
         //   var oSpiderman= model.createMyJSONModel()
             ///steps 1: create a brand new model object 
-         
             // steps 2- set or load date in the model
-          
             //steps 3- make a model awar to the application
-           this.getView().setModel(model.createMyJSONModel("models/mockdata/sample.json"))
-        //    this.getView().setModel(model.createMyJSONModel("models/mockdata/sample1.json", "hello"))
+            var oSpiderman=model.createMyJSONModel("models/mockdata/sample.json"); 
+            var oIronman=model.createMyJSONModel("models/mockdata/sample1.json");
+
+
+            // i shall save them in variable in case if i have 2 models
+            // the first oen is default one 
+            this.getView().setModel(oSpiderman)
+           this.getView().setModel(oIronman, "anya")
         //    var oSalary = this.getView().byId("idSalary");
         //    oSalary.bindValue("/empStr/salary");
         //    var oCurr = this.getView().byId("idCurr");
@@ -25,7 +29,7 @@ sap.ui.define([
         // complex-depening on ID in View
 
             _bindValue: function(){
-            //     //steps4: binding - 4 ways we can do binding-syntac
+               //steps4: binding - 4 ways we can do binding-syntac
             var oSalary = this.getView().byId("idSalary");
             oSalary.bindValue("/empStr/salary");
             var oCurr = this.getView().byId("idCurr");
