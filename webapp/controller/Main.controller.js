@@ -17,8 +17,8 @@ sap.ui.define([
 
             // i shall save them in variable in case if i have 2 models
             // the first oen is default one 
-            this.getView().setModel(oSpiderman)
-            this.getView().setModel(oIronman, "anya")
+            sap.ui.getCore().setModel(oSpiderman)
+            sap.ui.getCore().setModel(oIronman, "anya")
         //    var oSalary = this.getView().byId("idSalary");
         //    oSalary.bindValue("/empStr/salary");
         //    var oCurr = this.getView().byId("idCurr");
