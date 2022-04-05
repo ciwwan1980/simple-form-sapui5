@@ -18,10 +18,10 @@ controllerName="ibm.fin.ar.controller.Main">
         <Label text="Emp Name" />	
 		<Input  id="idEmpName" value="{/empStr/empName}" enabled="{/empStr/sherlok}"/>
         <Label text="Salary" />
-		<Input id="idSalary"  enabled="{/empStr/sherlok}"/>
+		<Input id="idSalary" value="{=${/empStr/empName} === 'hello'? 5000:0}"  enabled="{/empStr/sherlok}"/>
         <Label text="Currency" />
 		<Input id="idCurr"  enabled="{/empStr/sherlok}"/>
-	<Button text="Click Me" press="onMagic"/>
+		<Button text="Click Me" press="onMagic"/>
 		<Switch id="idSwitch" change="onChange"/>
 	</f:content>
 	</f:SimpleForm>

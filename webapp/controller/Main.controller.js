@@ -11,8 +11,8 @@ sap.ui.define([
             ///steps 1: create a brand new model object 
             // steps 2- set or load date in the model
             //steps 3- make a model awar to the application
-            var oSpiderman=model.createMyJSONModel("models/mockdata/sample.json"); 
-            var oIronman=model.createMyJSONModel("models/mockdata/sample1.json");
+            var oSpiderman = model.createMyJSONModel("models/mockdata/sample.json"); 
+            var oIronman = model.createMyJSONModel("models/mockdata/sample1.json");
 
 
             // i shall save them in variable in case if i have 2 models
@@ -32,7 +32,7 @@ sap.ui.define([
             _bindValue: function(){
                //steps4: binding - 4 ways we can do binding-syntac
             var oSalary = this.getView().byId("idSalary");
-            oSalary.bindValue("/empStr/salary");
+            // oSalary.bindValue("/empStr/salary");
             var oCurr = this.getView().byId("idCurr");
             oCurr.bindProperty("value", "/empStr/currency")
             // oCurr.bindProperty("enabled", "/empStr/sherlok")
