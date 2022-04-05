@@ -11,9 +11,9 @@ controllerName="ibm.fin.ar.controller.Main">
 		<core:Title text="employess details"/>
 	</f:title>
 		<Label text="Emp ID" />
-		<Input  id="idEmpID" value="{/empStr/empId}" enabled="{/empStr/sherlok}"/>
+		<Input  id="idEmpID" value="{anya>/empStr/empId}" enabled="{/empStr/sherlok}"/>
         <Label text="Emp Name" />	
-		<Input  id="idEmpName" value="{/empStr/empName}" enabled="{/empStr/sherlok}"/>
+		<Input  id="idEmpName" value="{anya>/empStr/empName}" enabled="{/empStr/sherlok}"/>
         <Label text="Salary" />
 		<Input id="idSalary"  enabled="{/empStr/sherlok}"/>
         <Label text="Currency" />
