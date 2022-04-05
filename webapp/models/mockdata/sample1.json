@@ -1,0 +1,10 @@
+{
+    "empStr": {
+        "empId": 500,
+        "empName": "Andrew",
+        "salary": 7000,
+        "currency": "us",
+        "sherlok": false
+    }
+
+}

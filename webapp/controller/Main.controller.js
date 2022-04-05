@@ -7,30 +7,35 @@ sap.ui.define([
 
         onInit: function () {
 
-          var oSpiderman= model.createMyJSONModel()
+        //   var oSpiderman= model.createMyJSONModel()
             ///steps 1: create a brand new model object 
          
             // steps 2- set or load date in the model
           
             //steps 3- make a model awar to the application
-            sap.ui.getCore().setModel(oSpiderman)
+           this.getView().setModel(model.createMyJSONModel("models/mockdata/sample.json"))
+        //    this.getView().setModel(model.createMyJSONModel("models/mockdata/sample1.json", "hello"))
+        //    var oSalary = this.getView().byId("idSalary");
+        //    oSalary.bindValue("/empStr/salary");
+        //    var oCurr = this.getView().byId("idCurr");
+        //    oCurr.bindProperty("value", "/empStr/currency")
 
-            
-
+             this._bindValue()
         },
         // complex-depening on ID in View
 
             _bindValue: function(){
-                //steps4: binding - 4 ways we can do binding-syntac
+            //     //steps4: binding - 4 ways we can do binding-syntac
             var oSalary = this.getView().byId("idSalary");
             oSalary.bindValue("/empStr/salary");
             var oCurr = this.getView().byId("idCurr");
             oCurr.bindProperty("value", "/empStr/currency")
             // oCurr.bindProperty("enabled", "/empStr/sherlok")
-            this._bindValue()
+           
             },
-        mario: false, 
-        onMagic: function () {
+           
+            mario: false, 
+            onMagic: function () {
             
         //technique number 2- 
             // var aForm = this.getView().byId("simpleForm");
@@ -53,7 +58,7 @@ sap.ui.define([
             
             //1- get the model of the object again, after we set the model in onint 
             // sap.ui.getCore().setModel(oSpiderman), we get it again below
-            var oModel= sap.ui.getCore().getModel();
+            var oModel= this.getView().getModel();
             //2-change the value in the model for scherlock 
             console.log(oModel, "oModel")
             oModel.setProperty("/empStr/sherlok", this.mario)

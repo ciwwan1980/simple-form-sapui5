@@ -4,14 +4,16 @@ sap.ui.define([
     'use strict';
    
     return {
-    createMyJSONModel: function (){
+    createMyJSONModel: function (filePath){
         // step1 create a brand mew model 
         var oModel = new JSONModel();
         //set up or load the data
         // oModel.setData();
-        oModel.loadData("models/mockdata/sample.json")
+        oModel.loadData(filePath)
         return oModel
 
     }
    }
 });
+
+
