@@ -10,15 +10,20 @@ controllerName="ibm.fin.ar.controller.Main">
 	<f:title>
 		<core:Title text="employess details"/>
 	</f:title>
+	<f:content>	
+
+	
 		<Label text="Emp ID" />
-		<Input  id="idEmpID" value="{/empStr/empId}" enabled="{anya>/empStr/sherlok}"/>
+		<Input  id="idEmpID" value="{/empStr/empId}" enabled="{/empStr/sherlok}"/>
         <Label text="Emp Name" />	
-		<Input  id="idEmpName" value="{/empStr/empName}" enabled="{anya>/empStr/sherlok}"/>
+		<Input  id="idEmpName" value="{/empStr/empName}" enabled="{/empStr/sherlok}"/>
         <Label text="Salary" />
 		<Input id="idSalary"  enabled="{/empStr/sherlok}"/>
         <Label text="Currency" />
 		<Input id="idCurr"  enabled="{/empStr/sherlok}"/>
 	<Button text="Click Me" press="onMagic"/>
+		<Switch id="idSwitch" change="onChange"/>
+	</f:content>
 	</f:SimpleForm>
 </mvc:View>
 						

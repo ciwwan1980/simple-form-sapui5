@@ -5,6 +5,34 @@
         "salary": 9500,
         "currency": "euro",
         "sherlok": false
+    }, 
+    "empTab":[
+        { 
+            "empId": 101,
+            "empName": "sofi",
+            "salary": 10000,
+            "currency": "euro",
+            "smoker": false, 
+            "gender": "female"   
+         },
+
+    { 
+            "empId": 102,
+            "empName": "ana",
+            "salary": 5000,
+            "currency": "euro",
+            "smoker": false, 
+            "gender": "female" 
+    }, 
+    {
+            "empId": 102,
+            "empName": "Nic",
+            "salary": 6000,
+            "currency": "euro",
+            "smoker": false, 
+            "gender": "male"  
     }
+
+    ]
 
 }

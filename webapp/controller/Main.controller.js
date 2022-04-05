@@ -18,13 +18,14 @@ sap.ui.define([
             // i shall save them in variable in case if i have 2 models
             // the first oen is default one 
             this.getView().setModel(oSpiderman)
-           this.getView().setModel(oIronman, "anya")
+            this.getView().setModel(oIronman, "anya")
         //    var oSalary = this.getView().byId("idSalary");
         //    oSalary.bindValue("/empStr/salary");
         //    var oCurr = this.getView().byId("idCurr");
         //    oCurr.bindProperty("value", "/empStr/currency")
 
              this._bindValue()
+          
         },
         // complex-depening on ID in View
 
@@ -37,7 +38,14 @@ sap.ui.define([
             // oCurr.bindProperty("enabled", "/empStr/sherlok")
            
             },
-           
+            oCore:sap.ui.getCore(),
+            onChange:function(){
+                var oSpiderman=this.oCore.getModel();
+                var oIronman=this.oCore.getModel("anya");
+                sap.ui.getCore().setModel(oSpiderman, "anya");
+                sap.ui.getCore().setModel(oIronman)
+            },
+
             mario: false, 
             onMagic: function () {
             

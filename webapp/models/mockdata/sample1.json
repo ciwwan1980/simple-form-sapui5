@@ -1,10 +1,39 @@
 {
     "empStr": {
-        "empId": 500,
+        "empId": 900,
         "empName": "Andrew",
         "salary": 7000,
         "currency": "us",
         "sherlok": true
+    }, 
+    "empTab":[
+        { 
+            "empId": 9001,
+            "empName": "Rebica",
+            "salary": 10000,
+            "currency": "euro",
+            "smoker": false, 
+            "gender": "female"   
+         },
+
+    { 
+            "empId": 9002,
+            "empName": "michaela",
+            "salary": 5000,
+            "currency": "euro",
+            "smoker": false, 
+            "gender": "female" 
+    }, 
+    {
+            "empId": 9003,
+            "empName": "mat",
+            "salary": 6000,
+            "currency": "euro",
+            "smoker": false, 
+            "gender": "male"  
     }
+
+    ]
+
 
 }
