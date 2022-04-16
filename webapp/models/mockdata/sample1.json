@@ -13,7 +13,9 @@
             "salary": 10000,
             "currency": "euro",
             "smoker": false, 
-            "gender": "female"   
+            "gender":  "https://cdn-icons-png.flaticon.com/512/4128/4128176.png",
+            "mStatus": "m", 
+            "rating":4    
          },
 
     { 
@@ -22,7 +24,9 @@
             "salary": 5000,
             "currency": "euro",
             "smoker": false, 
-            "gender": "female" 
+            "gender": "https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg" ,
+            "mStatus": "s", 
+            "rating":2    
     }, 
     {
             "empId": 9003,
@@ -30,7 +34,9 @@
             "salary": 6000,
             "currency": "euro",
             "smoker": false, 
-            "gender": "male"  
+            "gender": "https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg",
+            "mStatus": "s",
+            "rating":5        
     }
 
     ]

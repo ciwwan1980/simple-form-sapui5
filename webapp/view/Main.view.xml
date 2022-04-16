@@ -4,27 +4,87 @@ xmlns:mvc="sap.ui.core.mvc"
 xmlns="sap.m" 
 xmlns:core="sap.ui.core" 
 xmlns:f="sap.ui.layout.form" 
+xmlns:t="sap.ui.table"
 controllerName="ibm.fin.ar.controller.Main">
-	<f:SimpleForm editable="true" id="simpleForm" >
+<t:Table  height="200px" rows="{/empTab}">
+<t:columns>
+	<t:Column label="Emp no">
+		<t:template>	
+			<Text text="{empId}"/>
+		</t:template>
+	</t:Column>
+</t:columns>
+<t:columns>
+<t:Column label="Emp name">
+	<t:template>	
+		<Input value="{empName}"/>
+	</t:template>
+</t:Column>
+</t:columns>
+<t:columns>
+<t:Column label="Salary">
+	<t:template>	
+		<Text text="{salary}"/>
+	</t:template>
+</t:Column>
+</t:columns>
+<t:columns>
+<t:Column label="Currency">
+	<t:template>	
+		<Text text="{currency}"/>
+	</t:template>
+</t:Column>
+</t:columns>
+<t:columns>
+<t:Column label="Gender">
+	<t:template>	
+		<Image width="36px" height="36px" src="{gender}"/>
+	</t:template>
+</t:Column>
+</t:columns>
+<t:columns>
+<t:Column label="mStatus">
+	<t:template>
 
+		<Select selectedKey="{mStatus}">
+			<items>
+				<core:Item key="m" text="married"/>
+				<core:Item key="s" text="single"/>
+			</items>
+
+		</Select>
+	</t:template>
+</t:Column>
+</t:columns>
+
+<t:columns>
+<t:Column label="Rating">
+	<t:template>	
+		<RatingIndicator value="{rating}"/>
+	</t:template>
+</t:Column>
+</t:columns>
+</t:Table>
+
+	<f:SimpleForm height="200px" editable="true" id="simpleForm" >
 	<f:title>
 		<core:Title text="employess details"/>
 	</f:title>
 	<f:content>	
-
-	
 		<Label text="Emp ID" />
-		<Input  id="idEmpID" value="{/empStr/empId}" enabled="{/empStr/sherlok}"/>
+		<Input  id="idEmpID" value="{anya>/empStr/empId}" enabled="{/empStr/sherlok}"/>
         <Label text="Emp Name" />	
-		<Input  id="idEmpName" value="{/empStr/empName}" enabled="{/empStr/sherlok}"/>
+		<Input  id="idEmpName" value="{anya>/empStr/empName}" enabled="{/empStr/sherlok}"/>
         <Label text="Salary" />
-		<Input id="idSalary" value="{=${/empStr/empName} === 'hello'? 5000:0}"  enabled="{/empStr/sherlok}"/>
+		<Input id="idSalary" value="{=${/empStr/empName} === 'hello'? 5000:${/empStr/salary}}"  enabled="{/empStr/sherlok}"/>
         <Label text="Currency" />
 		<Input id="idCurr"  enabled="{/empStr/sherlok}"/>
 		<Button text="Click Me" press="onMagic"/>
 		<Switch id="idSwitch" change="onChange"/>
 	</f:content>
 	</f:SimpleForm>
+	
+
 </mvc:View>
 						
 	
