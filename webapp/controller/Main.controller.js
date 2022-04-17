@@ -23,7 +23,8 @@ sap.ui.define([
         //    var oCurr = this.getView().byId("idCurr");
         //    oCurr.bindProperty("value", "/empStr/currency")
 
-             this._bindValue()
+             this._bindValue(); 
+         
           
         },
 
@@ -37,6 +38,8 @@ sap.ui.define([
             // oCurr.bindProperty("enabled", "/empStr/sherlok")
            
             },
+
+         
 
             oCore:sap.ui.getCore(),
             onChange:function(){
@@ -73,6 +76,7 @@ sap.ui.define([
             console.log(oModel, "oModel")
             oModel.setProperty("/empStr/sherlok", this.mario)
         }
+        
 
     });
 })
