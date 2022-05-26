@@ -30,7 +30,13 @@ sap.ui.define([
           
            
             },
- 
+            changeNameToUC:function(inp) {
+                if (inp){
+                    return inp.toUpperCase();
+                }
+
+                },
+
             onRowSelect:function(oEvent){
 
                 //technique number 1- deep copy the value
