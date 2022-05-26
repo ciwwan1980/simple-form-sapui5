@@ -23,7 +23,7 @@ controllerName="ibm.fin.ar.controller.Main">
 			<t:Column label="Emp name">
 				<t:template> 
 					<Input value= "{ path: 'empName', 
-						formatter: '.changeNameToUC'}" />
+						formatter: '.formatter.changeNameToUC'}" />
 				</t:template>
 			</t:Column>
 

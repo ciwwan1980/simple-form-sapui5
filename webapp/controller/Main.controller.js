@@ -1,10 +1,11 @@
 sap.ui.define([
     "ibm/fin/ar/controller/BaseController",
-    "ibm/fin/ar/models/model"
-], function (Controller,model) {
-
+    "ibm/fin/ar/models/model", 
+    "ibm/fin/ar/util/formatter"
+], function (Controller,model, Formatter) {
+   
     return Controller.extend("ibm.fin.ar.controller.Main", {
-
+        formatter: Formatter,
         onInit: function () {
 
           
@@ -30,12 +31,12 @@ sap.ui.define([
           
            
             },
-            changeNameToUC:function(inp) {
-                if (inp){
-                    return inp.toUpperCase();
-                }
+            // changeNameToUC:function(inp) {
+            //     if (inp){
+            //         return inp.toUpperCase();
+            //     }
 
-                },
+            //     },
 
             onRowSelect:function(oEvent){
 

@@ -4,7 +4,12 @@ sap.ui.define([
 
     return { 
     
-    
+        changeNameToUC:function(inp) {
+            if (inp){
+                return inp.toUpperCase();
+            }
+
+            }
     }
         });
     
