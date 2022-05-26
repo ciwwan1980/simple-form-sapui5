@@ -10,9 +10,11 @@ sap.ui.define([
             }
 
         }, 
-        formatCurrency:function(amount,curr){
-            var oCurrencyFormat = NumberFormat.getCurrencyInstance();
-            return oCurrencyFormat.format(amount, curr);
+        formatCurrency:function(){
+            var oCurrencyFormat = NumberFormat.getCurrencyInstance({
+                currencyCode: false
+            });
+            return oCurrencyFormat.format(1.21, "EUR");
         }
     }
 });
