@@ -29,7 +29,10 @@ controllerName="ibm.fin.ar.controller.Main">
 
 			<t:Column label="Salary">
 				<t:template>
-					<Text text="{salary}  {currency} "/>
+					<Text  text="{  
+					parts:[{path:'salary'},{path:'currency'}],
+					formatter: '.formatter.formatCurrency'}"/>
+				
 				</t:template>
 			</t:Column>
 		

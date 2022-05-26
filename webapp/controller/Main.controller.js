@@ -2,6 +2,7 @@ sap.ui.define([
     "ibm/fin/ar/controller/BaseController",
     "ibm/fin/ar/models/model", 
     "ibm/fin/ar/util/formatter"
+  
 ], function (Controller,model, Formatter) {
    
     return Controller.extend("ibm.fin.ar.controller.Main", {
@@ -17,6 +18,7 @@ sap.ui.define([
     
              this._bindValue(); 
             //  this.onRowSelect()
+            
          
         
         },
