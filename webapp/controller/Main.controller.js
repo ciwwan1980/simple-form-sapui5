@@ -48,16 +48,17 @@ sap.ui.define([
                 //     var oSimpleForm=this.getView().byId("idNew");
                 //     oSimpleForm.bindElement(sPath);
                 //    }
-                var sPath=oEvent.getParameter("rowContext").getPath();
-                console.log(sPath, "sPath----------------")
-                var oSimpleForm=this.getView().byId("idNew");
-                oSimpleForm.bindElement(sPath);
-                //    if (oEvent.getParameter("rowContext") !== null && oEvent.getParameter("rowContext") !== undefined) {   
-                //         var sPath=oEvent.getParameter("rowContext").getPath();
-                //         console.log(sPath, "sPath----------------")
-                //         var oSimpleForm=this.getView().byId("idNew");
-                //         oSimpleForm.bindElement(sPath);
-                //    }
+                // var sPath=oEvent.getParameter("rowContext").getPath();
+                // console.log(sPath, "sPath----------------")
+                // var oSimpleForm=this.getView().byId("idNew");
+                // oSimpleForm.bindElement(sPath);
+                
+                   if (oEvent.getParameter("rowContext") !== null && oEvent.getParameter("rowContext") !== undefined) {   
+                        var sPath=oEvent.getParameter("rowContext").getPath();
+                        console.log(sPath, "sPath----------------")
+                        var oSimpleForm=this.getView().byId("idNew");
+                        oSimpleForm.bindElement(sPath);
+                   }
             },
 
             oCore:sap.ui.getCore(),
