@@ -11,11 +11,12 @@
             "empId": 101,
             "empName": "Sofi",
             "salary": 10000,
-            "currency": "Euro",
+            "currency": "USA",
             "smoker": false, 
             "gender": "https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg",
             "mStatus": "s", 
-            "rating":3       
+            "rating":3, 
+            "eState":"T"  
          },
 
     { 
@@ -26,7 +27,8 @@
             "smoker": false, 
             "gender": "https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg",
             "mStatus": "s", 
-            "rating":2    
+            "rating":2, 
+            "eState":"E"  
     }, 
     {
             "empId": 103,
@@ -36,7 +38,8 @@
             "smoker": false, 
             "gender": "https://cdn-icons-png.flaticon.com/512/4128/4128176.png" ,
             "mStatus": "m", 
-            "rating":5       
+            "rating":5, 
+            "eState":"T"     
     }
 
     ]

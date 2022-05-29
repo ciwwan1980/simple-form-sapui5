@@ -30,7 +30,8 @@ controllerName="ibm.fin.ar.controller.Main">
 			<t:Column label="Salary">
 				<t:template>
 					<Text  text="{  
-					parts:[{path:'salary'},{path:'currency'}],
+					parts:
+					[{path:'salary'},{path:'currency'}],
 					formatter: '.formatter.formatCurrency'}"/>
 				
 				</t:template>
@@ -58,6 +59,11 @@ controllerName="ibm.fin.ar.controller.Main">
 				<t:Column label="Rating">
 					<t:template>
 						<RatingIndicator value="{rating}" />
+					</t:template>
+				</t:Column>
+				<t:Column label="eState">
+					<t:template>
+						<Text text="{eState}" />
 					</t:template>
 				</t:Column>
 		</t:columns>
